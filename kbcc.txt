@@ -1,0 +1,414 @@
+/*
+Name:Pranay
+R.No:18121A1221
+project:KBC
+*/
+#include<iostream>
+#include<fstream>
+#include<cstdio>
+#include<cstdlib>
+using namespace std;
+class qsn
+{
+	private:
+		int n;
+	public:
+		void set(int a)
+		{
+			n=a;
+		}
+		 void life_line(int n,int a)
+		{
+		    if(n==1)
+            {
+              cout<<"you have life line of 50-50 ! "<<endl;
+            }
+              if(a==2)
+              {
+                  cout<<"answer is either b or c "<<endl;
+              }
+            if(a==3)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==4)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==5)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==6)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==7)
+              {
+                  cout<<"answer is either a or c "<<endl;
+              }
+              if(a==8)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==9)
+              {
+                  cout<<"answer is either a or b "<<endl;
+              }
+              if(a==10)
+              {
+                  cout<<"answer is either a or c "<<endl;
+              }
+
+            else {
+                cout<<"you have no life lines"<<endl;
+            }
+		}
+
+
+		void s_qsn()
+		{
+		if(n==1)
+		{
+		cout<<"\n Q1.What is called as ' THE HOLY LAND'?";
+        cout<<"\n a.Jerusalem";
+        cout<<"\n b.Mathura";
+        cout<<"\n c.Mecca";
+        cout<<"\n l.life_line";
+		}
+		else if(n==2)
+		{
+		cout<<"\n Q2.What is called as ' THE ROOF OF THE WORLD'?";
+        cout<<"\n a.Nepal";
+        cout<<"\n b.Rome";
+        cout<<"\n c.Tibet";
+        cout<<"\n l.life_line";
+		}
+		else if(n==3)
+		{
+		cout<<"\n Q3.What is called as ' THE LAND OF RISING SUN'?";
+        cout<<"\n a.Chicago";
+        cout<<"\n b.Japan";
+        cout<<"\n c.Tibet";
+        cout<<"\n l.life_line";
+		}
+		else if(n==4)
+		{
+		cout<<"\n Q4.What is called as ' THE GIFT OF NILE'?";
+        cout<<"\n a.Chicago";
+        cout<<"\n b.Egypt";
+        cout<<"\n c.Africa";
+        cout<<"\n l.life_line";
+		}
+		else if(n==5)
+		{
+		cout<<"\n Q5.What is called as ' THE LAND OF MIDNIGHT SUN'?";
+        cout<<"\n a.Norway";
+        cout<<"\n b.Japan";
+        cout<<"\n c.Australia";
+        cout<<"\n l.life_line";
+		}
+		else if(n==6)
+		{
+		cout<<"\n Q6.What is called as ' THE LAND OF THUNDERBOLT'?";
+        cout<<"\n a.Bhutan";
+        cout<<"\n b.Canada";
+        cout<<"\n c.Arab";
+        cout<<"\n l.life_line";
+		}
+		else if(n==7)
+		{
+		cout<<"\n Q7.What is called as ' THE WINDY CITY?";
+        cout<<"\n a.Jerusalem";
+        cout<<"\n b.Japan";
+        cout<<"\n c.Chicago";
+        cout<<"\n l.life_line";
+		}
+		else if(n==8)
+	{
+		cout<<"\n Q8.What is called as ' THE LAND OF WHITE ELEPHANTS'?";
+        cout<<"\n a.Bangladesh";
+        cout<<"\n b.Thailand";
+        cout<<"\n c.India";
+        cout<<"\n l.life_line";
+	}
+	else if(n==9)
+	{
+		cout<<"\n Q9.What is called as ' THE CITY OF SEVEN HILLS'?";
+        cout<<"\n a.Rome";
+        cout<<"\n b.Nilgiri Hills";
+        cout<<"\n c.Tibet";
+        cout<<"\n l.life_line";
+	}
+	else if(n==10)
+	{
+	    cout<<"\n Q10.What is called as ' THE DARK CONTIENENT'?";
+        cout<<"\n a.Asia";
+        cout<<"\n b.Australia";
+        cout<<"\n c.Africa";
+        cout<<"\n l.life_line";
+	}
+		}
+};
+main()
+{
+    char name[50],ch[11],y;
+    int x,x_,n=1;
+    qsn q;
+    do
+    {
+        x=0;
+        cout<<"\n       Welcome to KBC";
+        cout<<"\n\n Enter your name: ";
+        cin>>name;
+        cout<<"------WELCOME------\n"<<name<<endl;
+        cout<<"\n Enter answer in form of 'a','b' and'c'only.";
+        q.set(1);
+        q.s_qsn();
+        cin>>ch[1];
+        if(ch[1]=='a')
+        {
+            x_=x+1000;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[1]=='l')
+        {
+            n--;
+            q.life_line(n,1);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        q.set(2);
+        q.s_qsn();
+        cin>>ch[2];
+        if(ch[2]=='c')
+        {
+            x_=x*2.5;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[2]=='l')
+        {
+            n--;
+            q.life_line(n,2);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        q.set(3);
+        q.s_qsn();
+        cin>>ch[3];
+        if(ch[3]=='b')
+        {
+            x_=x*2;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[3]=='l')
+        {
+            n--;
+            q.life_line(n,3);
+        }
+        else
+        {
+            cout<<"\nSorry wrong answer.";
+            goto abc;
+        }
+        q.set(4);
+        q.s_qsn();
+        cin>>ch[4];
+        if(ch[4]=='b')
+        {
+            x_=x*2;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[4]=='l')
+        {
+            n--;
+            q.life_line(n,4);
+        }
+        else
+        {
+            cout<<"Sorry wrong answer.";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(5);
+        q.s_qsn();
+        cin>>ch[5];
+        if(ch[5]=='a')
+        {
+            x=x*2.5;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[5]=='l')
+        {
+            n--;
+            q.life_line(n,5);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(6);
+        q.s_qsn();
+        cin>>ch[6];
+        if(ch[6]=='a')
+        {
+            x=x*2;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[6]=='l')
+        {
+            n--;
+            q.life_line(n,6);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(7);
+        q.s_qsn();
+        cin>>ch[7];
+        if(ch[7]=='c')
+        {
+            x=x*5;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[7]=='l')
+        {
+            n--;
+            q.life_line(n,7);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(8);
+        q.s_qsn();
+        cin>>ch[8];
+        if(ch[8]=='b')
+        {
+            x=x*5;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[8]=='l')
+        {
+            n--;
+            q.life_line(n,8);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(9);
+        q.s_qsn();
+        cin>>ch[9];
+        if(ch[9]=='a')
+        {
+            x=x*2;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[9]=='l')
+        {
+            n--;
+            q.life_line(n,9);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer";
+            goto abc;
+        }
+        cout<<"Do you want to quit (y/n) : "<<endl;
+        cin>>y;
+        if(y=='n')
+        exit(0);
+        q.set(10);
+        q.s_qsn();
+        cin>>ch[10];
+        if(ch[10]=='c')
+        {
+            x=x*2;
+            cout<<"\n Good Job.";
+            cout<<"\n Your score is "<<x;
+        }
+        else if(ch[10]=='l')
+        {
+            n--;
+            q.life_line(n,10);
+        }
+        else
+        {
+            cout<<"\n Sorry wrong answer.";
+            goto abc;
+        }
+        abc:
+     cout<<"you got :"<<x<<" amount "<<endl;
+    }while(ch[11]=='Y'||ch[11]=='y');
+fstream fout;
+fout.open("sample.txt",ios::app);
+fout<<"\n Name is : "<<name<<endl;
+fout<<"\n wons "<<x<<" rupees !"<<endl;
+fout.close();
+}
+/*
+output:
+
+       Welcome to KBC
+
+ Enter your name: Praddep
+------WELCOME------
+Praddep
+
+ Enter answer in form of 'a','b' and'c'only.
+ Q1.What is called as ' THE HOLY LAND'?
+ a.Jerusalem
+ b.Mathura
+ c.Mecca
+ l.life_linea
+
+ Good Job.
+ Your score is 0
+ Q2.What is called as ' THE ROOF OF THE WORLD'?
+ a.Nepal
+ b.Rome
+ c.Tibet
+ l.life_lineb
+
+ Sorry wrong answer.you got :0 amount
+*/
