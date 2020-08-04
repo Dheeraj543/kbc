@@ -1,6 +1,6 @@
 /*
-Name:Pranay
-R.No:18121A1221
+Name:Dheeraj
+R.No:18121A1235
 project:KBC
 */
 #include<iostream>
